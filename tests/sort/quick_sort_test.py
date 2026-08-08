@@ -1,5 +1,7 @@
 from dsa.sort import QuickSort
-from tests.helpers import verify_class
+from tests.helpers import ClassVerifier, parametrize_class_verifier
+
+VERIFIER = ClassVerifier(QuickSort)
 
 CASES = [
     {"input": [[0, -2, 3, -1, 4]], "expected": [-2, -1, 0, 3, 4]},
@@ -9,5 +11,6 @@ CASES = [
 ]
 
 
-def test():
-    verify_class(QuickSort, CASES)
+@parametrize_class_verifier(VERIFIER, CASES)
+def test_cases(strategy, case):
+    VERIFIER.test_case(case, strategy)

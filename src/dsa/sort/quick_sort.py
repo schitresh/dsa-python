@@ -80,6 +80,9 @@ class QuickSort:
     # The swapping from both ends by comparing with pivot value partitions the array at the meeting
     # point. The swapping also means that the final pivot element may end up somewhere else, but
     # the meeting point becomes the new pivot.
+    # It is more efficient than Lomuto's algorithm. Lomuto's algo swaps the elements more often
+    # whenever the value is smaller than pivot, even if it's at the right side of partition. In
+    # contrast, Hoare's algo swaps only when the values are uneven while partitioning.
     def hoare_pivot(self, start, end):
         # Choose a pivot and track its value because the swapping may replace the pivot from its
         # original index
