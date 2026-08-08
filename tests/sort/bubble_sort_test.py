@@ -1,4 +1,4 @@
-from dsa.sort import MergeSort
+from dsa.sort import BubbleSort
 from tests.helpers import verify_class
 
 CASES = [
@@ -10,4 +10,4 @@ CASES = [
 
 
 def test():
-    verify_class(MergeSort, CASES)
+    verify_class(BubbleSort, CASES)
