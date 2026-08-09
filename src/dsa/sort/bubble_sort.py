@@ -2,7 +2,7 @@
 # This sort keeps swapping the adjacent elements till the smallest element bubbles up at the front.
 # In each iteration, the largest element is pushed at the end by continuous swapping.
 #
-# It is a 'stable sort' since only the adjacent elements are swapped keeping the original order
+# It is a stable sort since only the adjacent elements are swapped keeping the original order
 # unchanged.
 #
 # Time Complexity: O(n^2)

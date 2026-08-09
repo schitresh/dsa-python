@@ -10,8 +10,8 @@
 # at its sorted place.
 #
 # Time Complexity: O(n^2)
-#   Best: O(n^2)
-#   Worst: O(n^2)
+#   Best Case: O(n)
+#   Worst Case: O(n^2)
 # Auxiliary Space: O(1)
 class InsertionSort:
     def __init__(self, array):

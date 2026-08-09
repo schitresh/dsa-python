@@ -2,15 +2,59 @@
 
 The standard sorting algorithms are:
 
-1. Selection Sort: Finds the smallest value and puts it at front
-2. Bubble Sort: Keeps swapping the adjacent values till the largest one reaches the end
-3. Insertion Sort: Finds the sorted place in the subarray before the current element
-4. Merge Sort: Continuously divide the array in two halves and re-merge to form a sorted range
+1. Selection Sort
+
+- Finds the smallest value and puts it at the front
+- Time Complexity: O(N^2)
+- Type: Unstable, In-Place, Comparison-based
+
+2. Bubble Sort
+
+- Keeps swapping adjacent values till the largest one reaches the end
+- Time Complexity: O(N^2)
+- Type: Stable, In-Place, Comparison-based
+
+3. Insertion Sort
+
+- Finds the sorted place for the current element in the subarray before it
+- Time Complexity: O(N^2)
+- Type: Stable, In-Place, Comparison-based
+
+4.  Merge Sort
+
+- Continuously divides the array into two halves and re-merges them in sorted order
+- Time Complexity: O(N log N)
+- Type: Stable, Out-of-Place, Comparison-based
+
 5. Quick Sort
+
+- Picks a pivot to partition elements into smaller and larger subsets, then sorts them recursively
+- Time Complexity: O(N log N)
+- Type: Unstable, In-Place, Comparison-based
+
 6. Heap Sort
+
+- Builds a max-heap from the array and repeatedly extracts the maximum element to the end
+- Time Complexity: O(N log N)
+- Type: Unstable, In-Place, Comparison-based
+
 7. Count Sort
+
+- Counts element occurrences in a frequency array and calculates exact target indices using prefix sums
+- Time Complexity: O(N + k) (where k is the value range)
+- Type: Stable (standard variant), Out-of-Place, Non-Comparison / Linear-time
+
 8. Radix Sort
+
+- Sorts numbers digit by digit from least to most significant using a stable subroutine
+- Time Complexity: O(d \* (N + b)) (where d is digits, b is base)
+- Type: Stable, Out-of-Place, Non-Comparison / Linear-time
+
 9. Bucket Sort
+
+- Distributes numbers into bounded interval buckets, sorts each bucket individually, and concatenates them
+- Time Complexity: O(N + k) (where k is the number of buckets)
+- Type: Stable (if inner sort is stable), Out-of-Place, Non-Comparison / Linear-time
 
 ## Types of Sorting
 

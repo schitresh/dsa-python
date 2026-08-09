@@ -1,13 +1,18 @@
-from dsa.sort import SelectionSort
+from dsa.sort import BucketSort
 from tests.helpers import ClassVerifier
 
-VERIFIER = ClassVerifier(SelectionSort)
+VERIFIER = ClassVerifier(BucketSort)
 
 CASES = [
+    {
+        "input": [[0.897, 0.565, 0.656, 0.1234, 0.665, 0.34346]],
+        "expected": [0.1234, 0.34346, 0.565, 0.656, 0.665, 0.897],
+    },
     {"input": [[0, -2, 3, -1, 4]], "expected": [-2, -1, 0, 3, 4]},
     {"input": [[4, 5, 9, 8, 7, 3, 2, 1, 6]], "expected": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
     {"input": [[3, 2, 1, 0, -1, -2, -3]], "expected": [-3, -2, -1, 0, 1, 2, 3]},
     {"input": [[12, 14, 8, -7, 15, -12]], "expected": [-12, -7, 8, 12, 14, 15]},
+    {"input": [[10, 20, 30, 40]], "expected": [10, 20, 30, 40]},
 ]
 
 

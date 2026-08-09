@@ -1,5 +1,5 @@
 from dsa.sort import InsertionSort
-from tests.helpers import ClassVerifier, parametrize_class_verifier
+from tests.helpers import ClassVerifier
 
 VERIFIER = ClassVerifier(InsertionSort)
 
@@ -11,6 +11,6 @@ CASES = [
 ]
 
 
-@parametrize_class_verifier(VERIFIER, CASES)
+@VERIFIER.parametrize_strategies_and_cases(CASES)
 def test_cases(strategy, case):
     VERIFIER.test_case(case, strategy)

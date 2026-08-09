@@ -1,7 +1,7 @@
-from dsa.sort import SelectionSort
+from dsa.sort import HeapSort
 from tests.helpers import ClassVerifier
 
-VERIFIER = ClassVerifier(SelectionSort)
+VERIFIER = ClassVerifier(HeapSort)
 
 CASES = [
     {"input": [[0, -2, 3, -1, 4]], "expected": [-2, -1, 0, 3, 4]},

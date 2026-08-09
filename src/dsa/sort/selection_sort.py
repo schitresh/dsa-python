@@ -4,8 +4,8 @@
 # It is an unstable sort, since the swapping can place an element at any index.
 #
 # Time Complexity: O(n^2)
-#   Best: O(n^2)
-#   Worst: O(n^2)
+#   Best Case: O(n^2)
+#   Worst Case: O(n^2)
 # Auxiliary Space: O(1)
 class SelectionSort:
     def __init__(self, array):
