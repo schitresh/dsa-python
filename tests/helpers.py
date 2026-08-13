@@ -24,13 +24,13 @@ class ClassVerifier:
         self.assert_case(result, case, strategy)
 
     def assert_case(self, result, case, strategy=None):
-        params_str = f"Params: {case['params']}" if "params\n" in case else "\n"
-        strategy_str = f"{strategy}\n" if strategy else "\n"
+        params_str = f"Params:   {case['params']}" if "params" in case else ""
+        strategy_str = f"{strategy}" if strategy else ""
 
         assert result == case["expected"], (
-            f"{strategy_str}"
+            f"{strategy_str}\n"
             f"  Input:    {case['input']}\n"
-            f"  {params_str}"
+            f"  {params_str}\n"
             f"  Expected: {case['expected']}\n"
             f"  Result:   {result}"
         )
